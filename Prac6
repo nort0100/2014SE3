@@ -1,2 +1,7 @@
 Test plan for Real World System
 
+Supermarket checkout system
+
+A supermarket checkout system is quite complex. Due to the fact there is likely to be many registers using the system at one time.
+There is endless possibilites as to the combinations of items that can be checked out, so testing can never be fully completed.
+There is always items being added and removed from inventory.
