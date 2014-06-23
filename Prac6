@@ -2,6 +2,57 @@ Test plan for Real World System
 
 Supermarket checkout system
 
-A supermarket checkout system is quite complex. Due to the fact there is likely to be many registers using the system at one time.
+A supermarket checkout system is quite complex. Due to a whole range of factors:
+Such as multiple registers using the system at one time-dealing with multiple updates/deletes of database/s.
 There is endless possibilites as to the combinations of items that can be checked out, so testing can never be fully completed.
-There is always items being added and removed from inventory.
+Updating system to include new products and promotions etc.
+Payment systems.
+This is just a few of the more strarightforward issues that have to be dealt with.
+
+The testing for such as system would be bottom up-unit and integration testing.
+The best way to begin would be unit test each module applicable to ensure correctness. This would be challenging for some
+ modules such as the scan purchases etc. when there is practically infinite products and and infinite combinations.
+Modules that would need to be covered:
+Basic Register operation- scanning of products, correct price using discounts. This section by itself could be split into 
+multiple smaller units before being progressively integrated.
+Database/s would need to be fully tested to ensure correct operation.
+Payments systems- credit cards, cash etc. further testing for automated register.
+
+These are the three main sections that the program would be composed of-software wise.
+The hardware would also need to be tested to ensure correctness.
+
+Once the unit testing of the above sections is complete, integration testing can begin.
+Starting with the register operations add database/s and test.
+Followed by adding payment system, with and without database/s.
+This could all be done without having to use a register terminal.
+Finally testing with a register terminal would cover most testing required.
+
+Further testing would need to be completed, mainly to check the load the system can handle as this is very important for a system
+such as this. This could be done my simulating multiple registers at once, preferably more than will be used in real system.
+Such that the final system will be able to handle multiple registers, a large rate of data transfer and deal with appropriately.
+
+This plan would allow each module-subsystem to be working correctly before any implementation begins. This will remove a lot of
+problems that could occur. Hence time, effort and money saved. With a system like this there is always going to be issues with
+implementation. Not neccesarily big issues, but bugs are bound to occur. Hence, thorough testing is required, pushing the
+boundaries is what is needed.
+
+Three most important types of test:
+Unit-One of the most basic test types is crucial for the success of a large system such as this, if you remove errors in the
+units, you save a lot of time, effort and money
+Integration-Going to be quite complex for such a system but is neccesary, there is no point getting correct units but not
+an entire working system. In reality the most crucial part of testing in this case all the units need to work together, correctly.
+Load testing-For a system that is going to deal with lots of operations, load testing is vital. In this system, the database will
+be getting accessed/modified a lot, by possibly multiple registers at one time. It does depend on the implementation of the system
+ as some may have a local database on the terminal, which updates at the end of the day etc. Either way lots of data needs to be 
+ dealt with.
+ 
+The unit testing would be white box. The integration-grey box. Load black box.
+
+Tests that are less important:
+Compatabilty testing- Probably not required as much. This system would be designed to use the same hardware of replicated
+elsewhere, some testing maybe done if a newer model register terminal is used etc. Shouldn't be critical, however could
+be an issue if different hardware is used than that specified. Code should be written to allow different hardware to use.
+Usabilty testing-The interface should be designed that such testing is not critical. However, ease of use is something,
+the stakeholders(staff using terminals) generally get concerned about. Can have major ramifications if design is not up 
+to standards of stakeholders want. Redesign of interface = time and money wasted. Should be correct as possible first time.
+
