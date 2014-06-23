@@ -52,7 +52,11 @@ Tests that are less important:
 Compatabilty testing- Probably not required as much. This system would be designed to use the same hardware of replicated
 elsewhere, some testing maybe done if a newer model register terminal is used etc. Shouldn't be critical, however could
 be an issue if different hardware is used than that specified. Code should be written to allow different hardware to use.
-Usabilty testing-The interface should be designed that such testing is not critical. However, ease of use is something,
+Usability testing-The interface should be designed that such testing is not critical. However, ease of use is something,
 the stakeholders(staff using terminals) generally get concerned about. Can have major ramifications if design is not up 
 to standards of stakeholders want. Redesign of interface = time and money wasted. Should be correct as possible first time.
+User acceptance testing- Unlikely to be critical to system design. More likely issues with hardware, usuability etc.
+However could be software change, could be difficult to change code at late stage of development. This is why multiple
+meetings need to be conducted such that any changes stakeholders have they can be implemented sooner rather than later.
 
+appox 746 words.
