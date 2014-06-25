@@ -31,6 +31,20 @@ Further testing would need to be completed, mainly to check the load the system 
 such as this. This could be done my simulating multiple registers at once, preferably more than will be used in real system.
 Such that the final system will be able to handle multiple registers, a large rate of data transfer and deal with appropriately.
 
+Other tests could include(further detail below):
+Compatibility testing should be completed once it is known the system works with specific hardware, OS etc. These could then
+ be changed one item at a time to test compatibilty. Mostly going to be needed for specific hardware and software upgrades/
+ modifications.
+Usability testing should be completed before the system is fully created. That is the interface should be decided upon with
+stakeholders prior to adding functionality to it. As below above modifying the interface at a late stage of development
+could result in time and money wasted.
+User acceptance testing needs to be completed so that the system is up to the desired standards of stakeholders. 
+Regular consultation is required with stakeholders and any changes that need to be implemented to be completed sooner
+rather than later.
+
+These tests above are less critical that the ones listed below and may well depend on how much time and money is available
+for them to be completed to a desired standard.
+
 This plan would allow each module-subsystem to be working correctly before any implementation begins. This will remove a lot of
 problems that could occur. Hence time, effort and money saved. With a system like this there is always going to be issues with
 implementation. Not neccesarily big issues, but bugs are bound to occur. Hence, thorough testing is required, pushing the
@@ -48,7 +62,7 @@ be getting accessed/modified a lot, by possibly multiple registers at one time. 
  
 The unit testing would be white box. The integration-grey box. Load black box.
 
-Tests that are less important:
+Other Testing that should be completed to cover all testing:
 Compatabilty testing- Probably not required as much. This system would be designed to use the same hardware of replicated
 elsewhere, some testing maybe done if a newer model register terminal is used etc. Shouldn't be critical, however could
 be an issue if different hardware is used than that specified. Code should be written to allow different hardware to use.
@@ -59,4 +73,5 @@ User acceptance testing- Unlikely to be critical to system design. More likely i
 However could be software change, could be difficult to change code at late stage of development. This is why multiple
 meetings need to be conducted such that any changes stakeholders have they can be implemented sooner rather than later.
 
-appox 746 words.
+Further testing still can be completed, but that will require more time and money. Likely to be limited by the budget set
+by key stakeholders.
